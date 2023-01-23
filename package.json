@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/AntonKirichenko1/Friday/issues"
   },
-  "homepage": "https://github.com/AntonKirichenko1/Friday#readme"
+  "homepage": "https://github.com/AntonKirichenko1/Friday#readme",
+  "dependencies": {
+    "normalize-scss": "^7.0.1"
+  }
 }

@@ -7,26 +7,40 @@
   line-height: 2.2rem;
   border-radius: 4px;
   transition: all 0.5s;
+
+  &__bordered {
+    background: $color-light;
+    border: 1px solid $color-border;
+    color: $color-text;
+
+    &:hover {
+      background: $color-hovered;
+      border-color: $color-hovered;
+    }
+  }
+
+  &__colored {
+    background: $color-primary;
+    color:$color-light;
+    border: 1px solid $color-primary;
+    
+    &:hover {
+      background: $color-additional;
+      background-color: $color-additional;
+    }
+  }
+}
+.link-button {
+  color: $color-primary;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  display: inline-flex;
+  align-items: center;
 }
 
-.button__bordered {
-  background: $color-light;
-  border: 1px solid $color-border;
-  color: $color-text;
-}
-
-.button__colored {
-  background: $color-primary;
-  color:$color-light;
-  border: 1px solid $color-primary;
-}
-
-.button__colored:hover {
-  background: $color-additional;
-  background-color: $color-additional;
-}
-
-.button__bordered:hover {
-  background: $color-hovered;
-  border-color: $color-hovered;
+.link-button__text {
+  margin-left:  9px; 
 }
