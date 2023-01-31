@@ -1,12 +1,60 @@
 .contact-us {
   background: $color-background;
+  padding-top: 62px;
+  padding-bottom: 82px;
+  @include media-tablet {
+   text-align: center;
+  }
 }
 
-.contact-us__form {
+.contact-us-container {
+  @include media-tablet {
+    flex-direction: column;
+  }
+}
 
+.title{
+  margin: 0;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.contact-us__form {
+  input, textarea {
+    border: 1px solid $color-light;
+    background-color: $color-light;
+    padding: 10px 21px;
+    border-radius: 5px;
+    &:focus {
+      border: 1px solid $color-primary;
+      outline: none;
+    }
+  } 
+  textarea {
+    resize: none;
+    width: 100%;
+    height: 160px;
+    margin-bottom: 20px;
+  }
 }
 
 .contact-us__line{
   margin-bottom: 19px;
-} 
-gg
+}
+
+.contact-us__button {
+  >* {
+    min-width: 117px;
+  }
+}
+
+.contact-us__content_inner {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  width: 528px;
+  @include media-tablet {
+    max-width: 100%;
+  }
+  
+}
