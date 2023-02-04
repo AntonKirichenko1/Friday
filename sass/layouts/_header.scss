@@ -12,6 +12,12 @@
   }
 }
 
+.header__buttons {
+  @include media-mobile {
+    display: none;
+  }
+}
+
 .header__buttons>button {
   margin-left: 14px;
 }

@@ -1,5 +1,9 @@
 .promo {
-  padding: 30px 0;
+  padding: 30px 0 58px;
+  overflow: hidden;
+  @include media-mobile {
+    padding: 30px 0 48px;
+  }
 }
 
 .promo__wrapper {
@@ -23,6 +27,11 @@
 
 .promo__title {
   margin: 0 0 30px;
+  @include media-mobile {
+    font-size: 32px;
+    line-height: 42px;
+    margin-bottom: 10px;
+  }
 }
 
 .promo__buttons {
@@ -59,6 +68,9 @@ align-items: center;
   }
   @include media-mobile {
     width: auto;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 23px;
   }
 }
 
@@ -81,11 +93,16 @@ align-items: center;
 
 .promo__image {
   @include media-tablet {
-    display: none;
+    scale: 0.9;
+    position: relative;
+    bottom: 9px;
+    right: 29px;
+
   }
   @include media-mobile {
     max-width: 100%;
-    margin: bottom 16px; ;
+    margin: bottom 16px;
+  
   }
 }
 

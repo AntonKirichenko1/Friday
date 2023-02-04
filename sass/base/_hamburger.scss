@@ -10,11 +10,15 @@
 
 .hamburger {
   display: none;
-  display: inline-block;
   position: relative;
   width: 31px;
   height: 25px;
   margin-right: 37px;
+  margin-top: 4px;
+  @include media-laptop {
+    display: none;
+  }
+
   @include media-tablet {
     display: inline-block;
   }
